@@ -1,5 +1,7 @@
 """A Corrected Program."""
 
+__Author__ = "730383189"
+
 choice: int = int(input("Feed me a number! "))
 
 if choice < 50: 
