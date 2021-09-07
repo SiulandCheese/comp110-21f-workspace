@@ -1,6 +1,6 @@
 """Program to demonstrate the use of relational operators."""
 
-"""Luis Sanchez - 730383189"""
+__author__ = "730383189"
 
 left_number: str = input("Left-hand side: ")
 right_number: str = input("Right-hand side: ")

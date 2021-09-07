@@ -1,6 +1,6 @@
 """Hype Machine Assignment."""
 
-"""Luis Sanchez - 730383189"""
+__author__ = "730383189"
 
 name: str = input("Hey, what's your name? ")
 print(name + ", you're a pretty cool guy, ya know that? ")
