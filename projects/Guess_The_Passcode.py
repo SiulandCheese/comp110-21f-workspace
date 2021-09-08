@@ -23,10 +23,10 @@ while Password != Password_Guess:
         print("Sorry, doesn't look like you got digit one right.")
         if Password_Digit_1 > Password_Guess_1:
             print("Digit 1 is higher than what you guessed!")
-            Passsword_Guess_1: int = int(input("Guess digit 1 again! "))
+            Passsword_Guess_1 = int(input("Guess digit 1 again! "))
         else: 
             print("Digit 1 is lower than what you gussed!")
-            Passsword_Guess_1: int = int(input("Guess digit 1 again! "))
+            Passsword_Guess_1 = int(input("Guess digit 1 again! "))
 
     if Password_Digit_2 == Password_Guess_2:
         print("You got the second digit right!")
@@ -34,10 +34,10 @@ while Password != Password_Guess:
         print("Sorry, doesn't look like you got digit two right.")
         if Password_Digit_2 > Password_Guess_2:
             print("Digit 2 is higher than what you guessed!")
-            Passsword_Guess_2: int = int(input("Guess digit 2 again! "))
+            Passsword_Guess_2 = int(input("Guess digit 2 again! "))
         else: 
             print("Digit 2 is lower than what you gussed!")
-            Passsword_Guess_2: int = int(input("Guess digit 2 again! "))
+            Passsword_Guess_2 = int(input("Guess digit 2 again! "))
 
     if Password_Digit_3 == Password_Guess_3:
         print("You got the final digit right!")
@@ -45,11 +45,11 @@ while Password != Password_Guess:
         print("Sorry, doesn't look like you got the last one right.")
         if Password_Digit_3 > Password_Guess_3:
             print("Digit 3 is higher than what you guessed!")
-            Passsword_Guess_3: int = int(input("Guess digit 3 again! "))
+            Passsword_Guess_3 = int(input("Guess digit 3 again! "))
         else: 
             print("Digit 3 is lower than what you gussed!")
-            Passsword_Guess_3: int = int(input("Guess digit 3 again! "))
+            Passsword_Guess_3 = int(input("Guess digit 3 again! "))
     
-    Password_Guess: str = str(Password_Guess_1) + str(Password_Guess_2) + str(Password_Guess_3)
+    Password_Guess = str(Password_Guess_1) + str(Password_Guess_2) + str(Password_Guess_3)
 
 print("Congrats, you win!")
