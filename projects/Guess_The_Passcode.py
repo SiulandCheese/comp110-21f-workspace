@@ -14,7 +14,7 @@ Password_Guess_1: int = int(input("What do you think the first digit is? "))
 Password_Guess_2: int = int(input("What do you think the second digit is? "))
 Password_Guess_3: int = int(input("What do you think the final digit is? "))
 
-Password_Guess: str = str(Password_Guess_1) + str(Password_Guess_2) + str(Password_Guess_3)
+Password_Guess = str(Password_Guess_1) + str(Password_Guess_2) + str(Password_Guess_3)
 
 while Password != Password_Guess:
     if Password_Digit_1 == Password_Guess_1:
@@ -49,7 +49,6 @@ while Password != Password_Guess:
         else: 
             print("Digit 3 is lower than what you gussed!")
             Passsword_Guess_3 = int(input("Guess digit 3 again! "))
-    
     Password_Guess = str(Password_Guess_1) + str(Password_Guess_2) + str(Password_Guess_3)
 
 print("Congrats, you win!")
