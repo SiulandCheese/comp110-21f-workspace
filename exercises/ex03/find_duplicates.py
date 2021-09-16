@@ -9,10 +9,10 @@ n = 1
 k = 0
 
 while i < len(given_word):
-    while n < len(given_word) - 1:
+    while n < len(given_word):
         if given_word[i] == given_word[n]:
-            print("Found Duplicate: True")
-            k: int = 1
+            print("Found duplicate: True")
+            k = k + 1
             break
         else: 
             n = n + 1
@@ -22,4 +22,4 @@ while i < len(given_word):
         break
 
 if k == 0:
-    print("Found Duplicate: False")
+    print("Found duplicate: False")
