@@ -1,23 +1,18 @@
 """A Funny Program."""
 
 
-def three() -> int: 
-    x: int = one(3)
-    print("three")
-    return x + 1
+def plus_two(y: int, zs: list[int]) -> list[int]: 
+    global x
+    x += 2
+    y += 2
+    zs[0] += 2
+    result: list[int] = [x, y, zs[0]]
+    return result
 
 
-def two() -> int: 
-    x: int = 2
-    print("two")
-    return x
+x: int = 1
+y: int = 2
+zs: list[int] = [3] 
 
-
-def one(x: int) -> int: 
-    x = x + two()
-    print("one")
-    return x
-
-
-x: int = two()
-print(three())
+print(plus_two(y, zs))
+    
