@@ -6,6 +6,7 @@ __author__ = "730383189"
 
 
 def only_evens(a: list[int]) -> list[int]:
+    """Prints only the even numbers."""
     i: int = 0 
     b: list[int] = []
     while i < len(a): 
@@ -17,6 +18,7 @@ def only_evens(a: list[int]) -> list[int]:
 
 
 def sub(a: list[int], b: int, c: int) -> list[int]: 
+    """Creates one list between two indexes specified."""
     i: int = 0 
     list_2: list[int] = []
     while i < len(a): 
@@ -28,6 +30,7 @@ def sub(a: list[int], b: int, c: int) -> list[int]:
 
 
 def concat(a: list[int], b: list[int]) -> list[int]: 
+    """Merges two lists together"""
     i: int = 0 
     c: list[int] = []
     while i < len(a):
