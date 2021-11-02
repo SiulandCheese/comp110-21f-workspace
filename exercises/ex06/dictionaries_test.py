@@ -1,6 +1,6 @@
 """Unit tests for dictionary functions."""
 
-from exercises.ex06.dictionaries import invert, favorite_colors, count
+from exercises.ex06.dictionaries import invert, favorite_color, count
 import pytest
 __author__ = "730383189"
 
@@ -14,30 +14,31 @@ def test_invert_KeyError() -> None:
 
 def test_invert_my_birthday() -> None: 
     """Tests if invert works with my birhday."""
-    assert invert({"12": "21"}) is None
+    assert invert({"12": "21"}) == {"21": "12"}
 
 
 def test_invert_empty() -> None: 
     """Tests if invert works while empty."""
-    assert invert({}) is None
+    test: dict[str, str] = {}
+    assert invert(test) == {}
 
 
-def test_favorite_colors_study_group() -> None: 
+def test_favorite_color_study_group() -> None: 
     """Tests if favorite colors works with my study group."""
     NAMES_COLORS: dict[str, str] = {"Parker": "Purple", "Vivian": "Periwinkle", "Luis": "Purple"}
-    assert favorite_colors(NAMES_COLORS) == 'Purple'
+    assert favorite_color(NAMES_COLORS) == 'Purple'
 
 
-def test_favorite_colors_family() -> None: 
+def test_favorite_color_family() -> None: 
     """Tests if favorite colors works with my family."""
     NAMES_COLORS: dict[str, str] = {"Dad": "Green", "Mom": "Red", "Me": "Purple", "Sister": "Red"}
-    assert favorite_colors(NAMES_COLORS) == 'Red'
+    assert favorite_color(NAMES_COLORS) == 'Red'
 
 
-def test_favorite_colors_empty() -> None:
+def test_favorite_color_empty() -> None:
     """Tests if favorite colors works empty."""
     NAMES_COLORS: dict[str, str] = {}
-    assert favorite_colors(NAMES_COLORS) == ''
+    assert favorite_color(NAMES_COLORS) == ''
 
 
 def test_count_sun_tzu() -> None:

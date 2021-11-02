@@ -3,7 +3,7 @@
 __author__ = "730383189"
 
 
-def invert(test: dict[str, str]) -> None:
+def invert(test: dict[str, str]) -> dict[str, str]:
     """Makes keys values and values keys."""
     i = 0 
     j = 1 
@@ -24,10 +24,10 @@ def invert(test: dict[str, str]) -> None:
         new_dict[values[i]] = keys[i]
         i = i + 1
 
-    print(new_dict)
+    return new_dict
 
 
-def favorite_colors(NAMES_COLORS: dict[str, str]) -> str:
+def favorite_color(NAMES_COLORS: dict[str, str]) -> str:
     """Finds which value in a dictionary is most common.""" 
     colors: list[str] = list(NAMES_COLORS.values())
     i = 1 
