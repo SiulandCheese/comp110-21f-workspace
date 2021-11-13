@@ -1,4 +1,4 @@
-from enemy import Enemy
+from enemy import Fish
 from projectile import Projectile
 import pygame as py
 import math
