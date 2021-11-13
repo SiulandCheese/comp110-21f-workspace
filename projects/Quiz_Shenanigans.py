@@ -1,21 +1,11 @@
-"""A Funny Program."""
+"""Testing some theories."""
 
+test: dict[str, list[str]] = {"prior_exp": ["none", "some", "none", "none"], "dif": ["1", "2", "1", "1"]}
 
-def zip_dict(ks: list[str], vs: list[str]) -> dict[str, str]: 
-    d: dict[str, str] = {}
+test["prior_exp"].append("Hello")
 
-    if len(ks) != len(vs): 
-        return d 
+test1: dict[str, list[str]] = {}
 
-    i: int = 0 
-    while i < len(ks): 
-        d[ks[i]] = vs[i]
-        i += 1 
+test1["prior_exp"] = [""] 
 
-    print(d)
-    return d 
-
-
-a: list[str] = ["B", "O", "O"] 
-b: list[str] = []
-c: dict[str, str] = zip_dict(a, b) 
+print(test1)
